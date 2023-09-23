@@ -48,19 +48,32 @@ export const nfts = [
 function NftCardList() {
   return (
     <div className="nft-card-list">
-      {nfts.map((nft) => {
-        return (
-          <NftCard
-            image={nft.image}
-            series={nft.series}
-            name={nft.name}
-            ethLogo={nft.ethLogo}
-            price={nft.price}
-            number={nft.number}
-            daysLeft={nft.daysLeft}
-          />
-        );
-      })}
+      <div className="rare-auction-text">
+        <h2>LE Super Rare Auction</h2>
+        <p>
+          We have released four limited edition NFTs early which can be bid on
+          via{" "}
+          <a href="#" className="nft-card-list-open-sea-link">
+            OpenSea
+          </a>
+          .
+        </p>
+      </div>
+      <div className="nft-card-list-auction-container">
+        {nfts.map((nft) => {
+          return (
+            <NftCard
+              image={nft.image}
+              series={nft.series}
+              name={nft.name}
+              ethLogo={nft.ethLogo}
+              price={nft.price}
+              number={nft.number}
+              daysLeft={nft.daysLeft}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }

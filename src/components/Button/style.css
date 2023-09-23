@@ -16,9 +16,7 @@
 }
 .button:hover {
   cursor: pointer;
-  background: linear-gradient(var(--color-dark2), var(--color-dark2))
-      padding-box,
-    linear-gradient(to right, var(--color-pink), var(--color-pink)) border-box;
+  box-shadow: 0 0px 5px var(--color-pink), 0 0px 5px var(--color-orange);
 }
 @media screen and (max-width: 420px) {
   .button {

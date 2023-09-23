@@ -1,13 +1,65 @@
-.nft-card-list {
+.nft-card-list-auction-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 35px;
+  margin-top: 30px;
   align-items: center;
 }
-@media screen and (min-width: 576px) {
-  .nft-card-list {
-    flex-direction: row;
+.rare-auction-text {
+  color: var(--color-dark4);
+  padding: 0px 30px;
+}
+.rare-auction-text h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 10px;
+}
+.rare-auction-text p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+.nft-card-list-open-sea-link {
+  color: var(--color-light3);
+}
+@media screen and (min-width: 576px) and (max-width: 850px) {
+  .nft-card-list-auction-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     justify-content: center;
+    align-items: center;
+  }
+  .nft-card-list-auction-container .nft-card {
+    justify-self: center;
+  }
+
+  .rare-auction-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1150px) {
+  .nft-card-list {
+    gap: 50px;
+  }
+  .nft-card-list-auction-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .rare-auction-text {
+    align-self: flex-start;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .nft-card-list-auction-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
   }
 }

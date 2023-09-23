@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 import NftHero from "./assets/nft-hero.png";
 import InitialRelease from "./components/NftCardWithText";
 
-// import NftCardList, { nfts } from "./components/NftCardList";
+import NftCardList, { nfts } from "./components/NftCardList";
 
 function App() {
   return (
@@ -31,11 +31,9 @@ function App() {
         />
       </div>
       <SponsorItemsList />
+      <NftCardList />
     </div>
   );
 }
 
-{
-  /* <NftCardList /> */
-}
 export default App;
