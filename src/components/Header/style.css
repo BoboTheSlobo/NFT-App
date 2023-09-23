@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.header-logo {
+  width: 160px;
+}
+.header-sign-up {
+  color: var(--color-pink);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}

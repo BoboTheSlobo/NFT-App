@@ -1,0 +1,30 @@
+.button {
+  padding: 19.5px 53px;
+  font-weight: 500;
+  color: var(--color-white);
+  outline: none;
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 30px;
+
+  background: linear-gradient(var(--color-dark2), var(--color-dark2))
+      padding-box,
+    linear-gradient(to right, var(--color-pink), var(--color-orange)) border-box;
+  border-radius: 50px;
+  border: 4px solid transparent;
+  transition: ease-in-out 0.3s;
+}
+.button:hover {
+  cursor: pointer;
+  background: linear-gradient(var(--color-dark2), var(--color-dark2))
+      padding-box,
+    linear-gradient(to right, var(--color-pink), var(--color-pink)) border-box;
+}
+@media screen and (max-width: 420px) {
+  .button {
+    padding: 15.5px 45px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

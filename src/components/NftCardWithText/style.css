@@ -1,0 +1,144 @@
+.nft-card-with-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 26px;
+}
+.nft-card-with-text.green {
+  background: var(--color-green);
+}
+.nft-card-with-text.orange {
+  background: var(--color-orange);
+}
+.nft-card-with-text img {
+  margin-top: 50px;
+}
+.nft-card-with-text__text {
+  color: var(--color-dark1);
+}
+.nft-card-with-text__text h3 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48.41px;
+}
+.nft-card-with-text__text p {
+  margin: 15px 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+.nft-card-with-text__text span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+.check-them-out-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.nft-initial-release-type {
+  display: none;
+}
+@media screen and (max-width: 426px) {
+  .nft-card-with-text__text h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 900px) {
+  .nft-card-with-text {
+    flex-direction: column;
+    gap: 48px;
+    padding: 48px 38px 0px;
+    border-radius: 20px;
+  }
+  .nft-card-with-text__text {
+    max-width: 455px;
+    margin-bottom: 50px;
+  }
+  .nft-card-with-text.image-on-right .nft-card-with-text__text {
+    order: 2;
+  }
+  .nft-card-with-text.image-on-right .initial-release-nft {
+    order: 1;
+  }
+  .initial-release-nft {
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .nft-initial-release-type {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .nft-initial-release-series {
+    color: var(--color-white);
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .nft-initial-release-name {
+    color: var(--color-dark1);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .nft-initial-release-number {
+    color: var(--color-dark3);
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 900px) {
+  .nft-card-with-text {
+    flex-direction: row;
+    gap: 48px;
+    padding: 58px 48px 0px;
+    border-radius: 20px;
+  }
+  .nft-card-with-text__text {
+    max-width: 455px;
+    margin-bottom: 50px;
+  }
+  .nft-card-with-text.image-on-right .nft-card-with-text__text {
+    order: 1;
+  }
+  .nft-card-with-text.image-on-right .initial-release-nft {
+    order: 2;
+  }
+  .initial-release-nft {
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .nft-initial-release-type {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .nft-initial-release-series {
+    color: var(--color-white);
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .nft-initial-release-name {
+    color: var(--color-dark1);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .nft-initial-release-number {
+    color: var(--color-dark3);
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}

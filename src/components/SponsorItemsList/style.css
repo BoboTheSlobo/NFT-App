@@ -1,0 +1,19 @@
+.sponsor-items-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 20px;
+}
+
+.sponsor-items-list > :nth-child(4) {
+  display: none;
+}
+@media screen and (min-width: 576px) {
+  .sponsor-items-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .sponsor-items-list > :nth-child(4) {
+    display: flex;
+  }
+}
