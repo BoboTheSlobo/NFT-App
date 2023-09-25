@@ -1,0 +1,46 @@
+.nft-text-cards {
+  display: flex;
+  flex-direction: column;
+}
+.nft-text-cards > :nth-child(2) {
+  background: var(--color-dark2);
+}
+.nft-text-card {
+  padding: 50px 30px;
+  background: var(--color-dark5);
+}
+.nft-text-card img {
+  width: 56px;
+}
+.nft-text-card h2 {
+  margin: 20px 0px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--color-white);
+}
+.nft-text-card p {
+  margin: 20px 0px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+@media screen and (min-width: 900px) {
+  .nft-text-cards {
+    flex-direction: row;
+    gap: 45px;
+    margin: 100px 0px;
+  }
+  .nft-text-cards > :nth-child(2) {
+    background: var(--color-dark5);
+  }
+  .nft-text-card {
+    padding: 50px 30px;
+    border-radius: 20px;
+    background: var(--color-dark5);
+    max-width: 550px;
+  }
+  .nft-text-card img {
+    width: 56px;
+  }
+}

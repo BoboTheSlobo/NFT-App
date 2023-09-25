@@ -4,11 +4,11 @@
   align-items: center;
   gap: 24px;
   padding: 26px;
-  margin: 50px 0px;
 }
 .nft-card-with-text.green {
   background: var(--color-green);
 }
+
 .nft-card-with-text.orange {
   background: var(--color-orange);
 }
@@ -99,7 +99,7 @@
   .nft-card-with-text {
     flex-direction: row;
     gap: 48px;
-    padding: 58px 48px 0px;
+    padding: 58px 42px 0px;
     border-radius: 20px;
   }
   .nft-card-with-text__text {
