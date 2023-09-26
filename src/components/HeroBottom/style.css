@@ -1,0 +1,5 @@
+.hero-border {
+  padding: 60px 30px;
+  border-top: 2px solid var(--color-dark5);
+  border-bottom: 2px solid var(--color-dark5);
+}

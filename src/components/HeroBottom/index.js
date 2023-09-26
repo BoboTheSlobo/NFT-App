@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 function HeroBottom(props) {
   const { heroImage } = props;
   return (
-    <section className="hero">
+    <section className="hero hero-border">
       <div className="hero-left">
         <span className="hero-left-launching">Launching soon</span>
         <h1 className="hero-left-heading">An NFT like no other</h1>
